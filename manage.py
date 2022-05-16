@@ -1,7 +1,6 @@
 from app import createApp
 
-if __name__ in '__main__':
-
+if __name__ == '__main__':
     createApp()
 
 

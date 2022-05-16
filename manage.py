@@ -3,6 +3,8 @@ from app import createApp
 if __name__ == '__main__':
     createApp()
 
+#Entry point of app!!!
+
 
 """"
 @app.route("/")

@@ -1,1 +1,5 @@
 flask == 2.1.0
+flask_SQLAlchemy
+flask_Migrate
+python-dotenv
+pymysql

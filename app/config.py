@@ -1,6 +1,9 @@
 import os
 
+from flask_sqlalchemy import SQLAlchemy
+
 basedir = os.path.abspath(__file__)
 
 class Config(object):
-    pass 
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False

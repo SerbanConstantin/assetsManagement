@@ -4,6 +4,7 @@ from flask_migrate import Migrate
 
 from .home import home as home_blueprint
 from .login import login as login_blueprint
+from .register import register as register_blueprint
 
 from .config import Config
 
@@ -33,6 +34,7 @@ def createApp():
 
     app.register_blueprint(home_blueprint)
     app.register_blueprint(login_blueprint)
+    app.register_blueprint(register_blueprint)
     return app
 
 app = createApp()

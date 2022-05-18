@@ -1,0 +1,38 @@
+<html lang="en"><head>
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+ 
+    <title>Insert item</title>
+ 
+    <!-- Custom styles for this template -->
+    <link href="static/signin.css" rel="stylesheet">
+  </head>
+ 
+  <body class="text-center">
+    <form class="form-signin" action="/create" method="post">
+      <img class="mb-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Atos_Origin_2011_logo.svg/1200px-Atos_Origin_2011_logo.svg.png" alt="" width="200" height="72">
+ 
+      <h1 class="h3 mb-3 font-weight-normal">Add a new Asset</h1>
+ 
+      <label for="nameInput" class="sr-only">Asset Name</label>
+      <input name="nameInput" id="nameInput" class="form-control" placeholder="Asset Name" required="" autofocus="">
+      <br>
+      <label for="locationInput" class="sr-only">Location</label>
+      <input name="locationInput" id="locationInput" class="form-control" placeholder="Location" required="" autofocus="">      
+      <br>
+      <input name="updatedInput" type="checkbox" class="form-check-input" id="updatedInput">
+      <label class="form-check-label" for="updatedInput">Updated?</label>
+ 
+      <hr>
+ 
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Add Asset</button>
+ 
+      <hr>
+ 
+      <p class="mt-5 mb-3 text-muted">© 2022</p>
+    </form>
+ 
+</body>
+</html>

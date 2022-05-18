@@ -5,25 +5,32 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous">
+
      <link href="static/signin.css" rel="stylesheet"
     </head>
 
     <body class="text-center">
         
-        <form class="form-signin"</form>
+        <form class="form-signin" action="/validate_login" method="POST" >
           <img class="mb-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Atos_Origin_2011_logo.svg/1200px-Atos_Origin_2011_logo.svg.png" alt="" width="200" height="72">
 
-            <h1 class="mb-3 font-weight-normal">Please sign in</h1>
+            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
 
-              <label class="form-label">Email address</label>
-              <input class="form-control" type="email" >            
+            {% if error  %}
+            <p style="color:red">{{ error  }}</p>
+            {% endif %}
+
+              <label for="inputEmail" class="form-label"></label>
+              <input class="form-control" type="email" id="inputEmail" name="inputEmail" placeholder="Email address">            
+            
+              <label for="inputPassword" class="form-label"></label>
+              <input class="form-control" type="password" id="inputPassword" name="inputPassword" placeholder="Password">
             </br>
-              <label class="form-label">Password</label>
-              <input class="form-control" type="password">
-            </br>
-            <button class="btn btn-lg btn-primary btn-block">Sign In</button>
-    </br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+          </br>
             <a href="/register">Create Account</a>
+        
+          
             <p class="mt-5 mb-3 text-muted">&copy: 2022</p>
           </form>   
    </body>

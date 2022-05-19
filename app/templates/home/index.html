@@ -43,20 +43,14 @@
             <td> {{ item[0] }} </td>
             <td> {{ item[1] }} </td>
             <td> {{ item[2] }} </td>
-            {% if item[3] == 0 %} 
+            {% if item[3] == "0" %} 
                 <td> No </td>
             {% else %}
                 <td> Yes </td>
             {% endif %}
           </tr>
           {% endfor %}
- 
-          <tr>
-            <th scope="row">3</th>
-            <td>Dummy Name</td>
-            <td>Dummy Location</td>
-            <td>No</td>
-          </tr>
+
         </tbody>
       </table>
     </div>
